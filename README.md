@@ -12,18 +12,18 @@ Beacon Packet Signal: [MAIN PACKET][LENGTH OF SSID][SSID]
 Example Packet: 
 
 [Information such as RadioTap type, BSSID & broadcast info etc.]
-[SSID LENGTH: 27][SSID: A]
+[SSID LENGTH: 20][SSID: A]
 
 
 Android:
 
 *Receives packet*
-Ok, the SSID Length = 27
-*Allocates 27 bytes of memory*
-*Copies 27 bytes starting from the SSID Offset 0 which = 'A'*
+Ok, the SSID Length = 20
+*Allocates 20 bytes of memory*
+*Copies 20 bytes starting from the SSID Offset 0 which = 'A'*
 ```
 
-After it copies `A` to the buffer, it has no more content of the beacon packet to copy from, so copies straight from memory and displays it in the WiFi settings.
+After it copies `A` to the buffer, it has no more content of the beacon packet to copy from, so copies straight from memory and displays it in the WiFi settings. The length of the copied junk-memory is `SSID Length Byte - Actual length of SSID`
 
 
 # Usage
