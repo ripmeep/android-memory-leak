@@ -28,11 +28,11 @@ After it copies `A` to the buffer, it has no more content of the beacon packet t
 
 # Usage
 ```
-gcc android-memory-leak.c -o android-memory-leak
+gcc aml.c -o aml
 
 airmon-ng start wlan0     
 
 # This creates a monitor-mode interface from wlan0, typically then called wlan0mon after using airmon-ng. You can use any tools/ways to get the interface into monitor mode
 
-./android-memory-leak [monitor-mode interface]
+./aml [monitor-mode interface]
 ```
