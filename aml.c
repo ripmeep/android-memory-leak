@@ -1,3 +1,11 @@
+/*
+	Author: ripmeep
+	CVE-2019-10605 (?)
+	Year: 2019
+	Instagram: @rip.meep
+	GitHub: https://github.com/ripmeep/
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
